@@ -3,4 +3,4 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-recommended latexmk
 script:
-- latexmk -dvi- -pdf test.tex
+- latexmk -dvi- -pdf --pdflatex="pdflatex -interaction nonstopmode -halt-on-error" test.tex
