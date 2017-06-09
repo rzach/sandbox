@@ -1,6 +1,6 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-recommended latexmk
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full latexmk
 script:
 - latexmk -dvi- -pdf --pdflatex="pdflatex -interaction nonstopmode -halt-on-error" test.tex
