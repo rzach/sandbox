@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo add-apt-repository ppa:ppa:jonathonf/texlive-2016 -y
+- sudo add-apt-repository ppa:jonathonf/texlive-2016 -y
 - sudo apt-get -qq update
 - sudo apt-get install -y --no-install-recommends texlive-base texlive-common texlive-fonts-extra texlive-latex-extra latexmk
 script:
