@@ -1,6 +1,6 @@
 sudo: required
 dist: xenial
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive texlive-fonts-extra latexmk
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive texlive-fonts-extra textlive-extra latexmk
 script:
 - latexmk -dvi- -pdf --pdflatex="pdflatex -interaction nonstopmode -halt-on-error" test.tex
